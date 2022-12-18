@@ -1,0 +1,41 @@
+.advantages {
+    &__title {
+        font-size: 3rem;
+        line-height: 2em;
+
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5.8rem;
+
+        & > li {
+            flex: 0 1 calc(50% - 2.9rem);
+
+            @media (min-width: 768px) {
+                flex: 0 1 calc(33.333333% - (5.8rem * 2 / 3));
+            }
+
+            @media (min-width: 992px) {
+                flex: 0 1 calc(20% - (5.8rem * 4 / 5));
+            }
+        }
+    }
+
+    &__list-icon {
+    }
+
+    &__list-text {
+    }
+
+    &__bottom {
+    }
+
+    &__btn {
+    }
+}

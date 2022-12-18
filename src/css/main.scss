@@ -1,0 +1,47 @@
+@import "var.scss";
+
+@import "a.tailwind.scss"; 
+
+@import 'fonts.scss';
+
+@import 'icomoon.scss';
+
+@import "plugins/swiper-bundle";
+@import "plugins/fancybox";
+
+@import "common.scss";  
+
+// ==== components =========
+@import "../components/header/header.scss";
+@import "../components/footer/footer.scss";
+@import "../components/buttons/buttons.scss";
+@import "../components/select/select.scss";
+@import "../components/card/card.scss";
+@import "../components/advantages/advantages.scss";
+@import "../components/form/form.scss";
+@import "../components/hero-filter/hero-filter.scss";
+@import "../components/multiple-select/multiple-select.scss";
+@import "../components/filter/filter.scss";
+@import "../components/vacancy-single-hero/vacancy-single-hero.scss";
+@import "../components/article/article.scss";
+@import "../components/cars-simple/cars-simple.scss";
+@import "../components/text-content/text-content.scss";
+@import "../components/loading-box/loading-box.scss";
+@import "../components/testimonials/testimonials.scss";
+@import "../components/hero/hero.scss";
+@import "../components/breadcrumbs/breadcrumbs.scss";
+@import "../components/hero-second/hero-second.scss";
+@import "../components/text-section/text-section.scss";
+// // ==== components =========
+
+
+// ==== pages =========
+@import "pages/home.scss";  
+@import "pages/vacancy.scss";  
+@import "pages/vacancy-single.scss";  
+@import "pages/branch.scss";  
+@import "pages/branch-single.scss";  
+@import "pages/features.scss";  
+@import "pages/features-single.scss";  
+@import "pages/about.scss";  
+// // ==== pages =========

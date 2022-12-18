@@ -1,0 +1,92 @@
+.form {
+
+    &__fields {
+    }
+
+    &__field {
+    }
+
+    &__label {
+    }
+
+    &__bottom {
+    }
+
+    &__submit {
+    }
+}
+
+input.input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 2.5rem;
+    font-weight: 500;
+    color: $textColorDark;
+    height: 6.2rem;
+
+    &::placeholder {
+        color: $textColorDarkSecond;
+    }
+
+    &:focus-visible {
+        outline-color: rgba(#00A1E2, 0.14);
+        outline-offset: 0.2rem;
+        outline-width: 0.2rem;
+    }
+
+    &--text-dark {
+        font-weight: 400;
+        &::placeholder {
+            color: $textColorDarkSecond;
+        }
+    }
+
+}
+.textarea {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem 2.5rem;
+    font-weight: 500;
+    color: $textColorDark;
+    height: 14.3rem;
+    resize: none;
+
+    &::placeholder {
+        color: $textColorDarkSecond;
+    }
+
+    &:focus-visible {
+        outline-color: rgba(#00A1E2, 0.14);
+        outline-offset: 0.2rem;
+        outline-width: 0.2rem;
+    }
+}
+
+.checkbox-radio {
+    & input {
+        &:checked ~ .checkbox-radio__square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $themeColor;
+            border-color: $themeColor;
+            
+            &:before {
+                font-family: 'icomoon' !important;
+                content: "\e90b";
+                font-size: 0.9rem;
+            }
+        }
+    }
+    &__square {
+    }
+
+    &__text {
+    }
+}

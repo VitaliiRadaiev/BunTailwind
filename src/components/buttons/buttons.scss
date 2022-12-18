@@ -1,0 +1,133 @@
+.btn-default {
+    display: inline-flex;
+    min-height: 5.3rem;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    gap: 0.7rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $textColorLight;
+    background-color: $themeColorThird;
+    border-radius: 0.4rem;
+    text-align: center;
+    justify-content: center;
+
+    @apply transition hover:opacity-80;
+
+    & span {
+        flex: 0 0 auto;
+        height: 2rem;
+        min-width: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.3rem;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        background-color: $themeColorSecond;
+        font-weight: 700;
+        text-align: center;
+        color: $themeColorThird;
+    }
+
+    &--second {
+        background-color: $themeColor;
+
+        & span {
+            background-color: $themeColorThird;
+            color: $textColorLight;
+        }
+    }
+
+    &--third {
+        background-color: $themeColorSecond;
+    }
+
+    &--line {
+        background-color: transparent;
+        border: 0.2rem solid;
+        opacity: 1 !important;
+
+        &.btn-default--light {
+            border-color: $themeColorSecond;
+            color: $textColorLight;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    background-color: $themeColorSecond;
+                    color: $textColorDark;
+                }
+            }
+        }
+    }
+}
+
+.selected-filter-btn {
+    background: rgba(128, 134, 149, 0.1);
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 0.6rem;
+    color: $textColorDarkSecond;
+    font-size: 1.7rem;
+    line-height: 1.2em;
+    gap: 0.1em;
+    cursor: auto;
+
+
+
+    &__close {
+        flex: 0 0 auto;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &:before {
+            font-family: 'icomoon' !important;
+            content: "\e900";
+            transition: all .3s ease;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                &:before {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    transition: opacity .3s ease;
+
+    @media (min-width: 992px) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &:before {
+        font-family: 'icomoon' !important;
+        content: "\e907";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $themeColor;
+        font-size: 1.8rem;
+    }
+}

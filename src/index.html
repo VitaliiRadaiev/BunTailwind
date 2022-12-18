@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html')
+
+<body>
+    @@include('components/header/_header.html')
+
+    <main class="_page">
+        <div class="pt-[8rem]"></div>
+        <section class="promo-header relative">
+            <div class="promo-header__bg absolute z-1 top-0 left-0 w-full h-full overflow-hidden">
+                <div class="promo-header__bg-decor absolute z-2 left-0 top-0 w-full h-full">
+                    <img class="absolute left-0 bottom-0 w-full h-auto" src="img/logo/logo-decor.svg" alt="">
+                </div>
+                <div class="promo-header__bg-img absolute top-0 left-0 z-1 w-full h-full">
+                    <img class="w-full h-full object-cover" src="img/promo-header-bg.jpg" alt="">
+                </div>
+            </div>
+            <div class="promo-header__body container relative z-2 pt-[17rem] text-white">
+                <div class="promo-header__box relative w-full max-w-[81.8rem] mx-auto text-center">
+                    <div class="promo-header__box-inner relative z-2 px-[2rem] pb-[4.5rem]">
+                        <h1 class="promo-header__title title-1 mb-[5.4rem]">Bij Bun zijn wij op zoek <br> naar
+                            succesmakers</h1>
+                        <div class="promo-header__label text-[1.4rem] leading-[1.7rem] mb-[1.3rem]">Bekijk onze
+                            vacatures per afdeling</div>
+                        <div
+                            class="promo-header__filter flex flex-wrap justify-center gap-x-[0.7rem] gap-y-[1.1rem] w-full max-w-[48rem] mx-auto mb-[5.5rem]">
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    Marketing
+                                </div>
+                            </label>
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    HR
+                                </div>
+                            </label>
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    Sales
+                                </div>
+                            </label>
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    Projectontwikkelaar
+                                </div>
+                            </label>
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    Vastgoed
+                                </div>
+                            </label>
+                            <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                                <input class="absolute opacity-0 z-0" type="checkbox">
+                                <div
+                                    class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                                    Supermarkt
+                                </div>
+                            </label>
+                        </div>
+                        <div class="promo-header__bottom">
+                            Weten wat wij in onze supermarkten te bieden hebben? Klik dan <a href="#"
+                                class="underline">hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-header__arrow-down absolute left-[50%] bottom-0 z-5 text-[4rem] text-white flex justify-center items-center w-[5rem] h-[5rem] rounded-[50%] bg-themeColorThird translate-y-[50%] translate-x-[-50%] cursor-pointer"
+                    data-scroll-to=".services">
+                    <i class="icon-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="services py-[8rem]">
+            <div class="container">
+                <div class="section-head flex items-center justify-between gap-[3rem] flex-wrap mb-[3rem]">
+                    <h2 class="section-head__title title-2 text-themeColor">Kom je werken bij onze Albert Heijn?</h2>
+                    <a href="#" class="section-head__btn btn-default">Bekijk alle vacatures</a>
+                </div>
+                <ul class="list-default grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[4rem] gap-y-[3rem]">
+                    <li>
+                        @@include('components/card/_card.html', {
+                        "mode": "",
+                        "head": "Sales",
+                        "img": "img/card-img-1.jpg"
+                        })
+                    </li>
+                    <li>
+                        @@include('components/card/_card.html', {
+                        "mode": "",
+                        "head": "Vastgoed",
+                        "img": "img/card-img-2.jpg"
+                        })
+                    </li>
+                    <li>
+                        @@include('components/card/_card.html', {
+                        "mode": "",
+                        "head": "projectmanager",
+                        "img": "img/card-img-3.jpg"
+                        })
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        @@include('components/advantages/_advantages.html')
+
+        <section class="places py-[8rem]">
+            <div class="container">
+                <div class="section-head flex items-center justify-between gap-[3rem] flex-wrap mb-[3rem]">
+                    <h2 class="section-head__title title-2 text-themeColor">We zitten dichterbij dan je denkt</h2>
+                    <a href="#" class="section-head__btn btn-default">Alle filialen</a>
+                </div>
+                <ul class="places__list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2.5rem]">
+                    <li>
+                        @@include('components/card/_card-second.html', {
+                        "mode": "",
+                        "head": "Almere",
+                        "img": "img/card-img-4.jpg"
+                        })
+                    </li>
+                    <li>
+                        @@include('components/card/_card-second.html', {
+                        "mode": "",
+                        "head": "Almere",
+                        "img": "img/card-img-4.jpg"
+                        })
+                    </li>
+                    <li>
+                        @@include('components/card/_card-second.html', {
+                        "mode": "",
+                        "head": "Almere",
+                        "img": "img/card-img-4.jpg"
+                        })
+                    </li>
+                    <li>
+                        @@include('components/card/_card-second.html', {
+                        "mode": "",
+                        "head": "Almere",
+                        "img": "img/card-img-4.jpg"
+                        })
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta relative ">
+            <div class="cta__bg bg-themeColor absolute top-0 left-0 w-full h-full z-1">
+                <div class="cta__decor absolute z-1 h-full w-full">
+                    <img class="absolute left-0 bottom-0 w-full h-auto opacity-20" src="img/logo/logo-decor.svg" alt="">
+                </div>
+                <div class="cta__img ibg absolute z-2 w-[50%] h-full hidden md:block">
+                    <img src="img/cta-bg.jpg" alt="">
+                </div>
+            </div>
+            <div
+                class="cta__body relative z-2 pb-[8rem] pt-[8rem] md:pt-[13.5rem] min-h-[65.8rem] text-white flex justify-between flex-col gap-[4rem] md:gap-0 md:flex-row">
+                <div class="cta__body-col md:basis-[50%] px-[20px] md:flex md:justify-center">
+                    <h2 class="cta__title title-2 text-center md:text-left">
+                        Vragen? Vul het formulier in <br> en wij nemen zo snel mogelijk <br> contact met je op.
+                    </h2>
+                </div>
+                <div class="cta__body-col md:basis-[50%] px-[20px] md:flex md:justify-center">
+                    <div class="cta__form md:max-w-[48rem]">
+                        <form action="/">
+                            <div class="form flex flex-col gap-[2rem]">
+                                <div class="form__fields flex flex-wrap gap-[2rem]">
+                                    <div class="form__field basis-full">
+                                        <label class="form__label block mb-[0.4rem] md:mb-[0.4rem] text-[1.6rem] leading-[2rem]">
+                                            Volledige naam
+                                        </label>
+                                        <input type="text" class="input" placeholder="Enter">
+                                    </div>
+                                    <div class="form__field basis-full">
+                                        <label class="form__label  block mb-[0.4rem] md:mb-[0.4rem] text-[1.6rem] leading-[2rem]">E-mailadres</label>
+                                        <input type="email" class="input" placeholder="Enter">
+                                    </div>
+                                    <div class="form__field basis-full">
+                                        <label class="form__label  block mb-[0.4rem] md:mb-[0.4rem] text-[1.6rem] leading-[2rem]">Stel je vraag:</label>
+                                        <textarea placeholder="Stel hier je vraag" class="textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__bottom md:text-right">
+                                    <button class="form__submit btn-default btn-default--line btn-default--light">Neem contact op</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('components/footer/_footer.html', {
+    "mode": ""
+    })
+</body>
+
+</html>

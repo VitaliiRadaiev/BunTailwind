@@ -43,7 +43,7 @@ module.exports = {
       },
       colors: {
         textColorDark: '#1E1D1B',
-        textColorDarkSecond: '#CBCBCB',
+        textColorDarkSecond: '#808695', 
         textColorLight: '#fff',
         themeColor: '#1E1D1B',
         themeColorSecond: '#fff',

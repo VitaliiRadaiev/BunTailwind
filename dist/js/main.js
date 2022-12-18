@@ -807,6 +807,7 @@ window.popup = {
 
 	scrollTo() {
 		let buttons = document.querySelectorAll('[data-scroll-to]');
+		let header = document.querySelector('.header');
 		if(buttons.length) {
 			buttons.forEach(btn => {
 				btn.addEventListener('click', (e) => {
@@ -814,6 +815,10 @@ window.popup = {
 					if (el) {
 						e.preventDefault();
 						let top = Math.abs(document.body.getBoundingClientRect().top) + el.getBoundingClientRect().top;
+
+						if (header) {
+							top = top - header.clientHeight;
+						}
 
 						window.scrollTo({ 
 							top: top - 20,

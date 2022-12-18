@@ -64,15 +64,15 @@
 }
 
 .selected-filter-btn {
-    background: rgba(128, 134, 149, 0.1);
-    border: 1px solid rgba(151, 151, 151, 0.2);
-    border-radius: 5px;
+    background: transparent; 
+    border: 0.2rem solid $textColorDark;
+    border-radius: 0.5rem;
     display: inline-flex;
     align-items: center;
     min-height: 3rem;
     border-radius: 0.5rem;
     padding: 0.3rem 1rem 0.3rem 0.6rem;
-    color: $textColorDarkSecond;
+    color: $textColorDark;
     font-size: 1.7rem;
     line-height: 1.2em;
     gap: 0.1em;

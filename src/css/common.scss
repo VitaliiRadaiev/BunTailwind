@@ -80,36 +80,46 @@ h2,
 }
 h3,
 .title-3 {
-	font-weight: 700;
+	font-family: $secondFontFamily;
+	font-weight: 400;
 	font-size: 2.7rem;
 	line-height: 1.22em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 h4,
 .title-4 {
-	font-weight: 700;
+	font-family: $secondFontFamily;
+	font-weight: 400;
 	font-size: 2.2rem;
 	line-height: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 h5,
 .title-5 {
+	font-family: $secondFontFamily;
+	font-weight: 400;
 	font-size: 1.8rem;
 	line-height: 1.22em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 h6,
 .title-6 {
 }
 
 .text {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	line-height: 1.38em;
 }
 .text-sm {
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	line-height: 1.23em;
 }
 
 .text-md {
-	font-size: 1.9rem;
+	font-size: 1.6rem;
 	line-height: 1.26em;
 }
 

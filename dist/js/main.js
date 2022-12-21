@@ -1367,10 +1367,10 @@ class Filter {
                 input.setAttribute('data-filter-id', this.id);
                 input.setAttribute('data-filter-input-id', index);
 
-                let text = input.parentElement.querySelector('.checkbox-radio__text').innerText;
+                let text = input.parentElement.querySelector('.promo-header__filter-item-text').innerText;
 
                 if (input.checked) {
-                    this.addSelectedButtons(this.id, index, text);
+                    this.addSelectedButtons(this.id, index, text, input);
                 }
 
                 input.addEventListener('change', (e) => {
@@ -1492,33 +1492,8 @@ class Filter {
     }
 }
 		{
-    let multipleSelectsObjects = [];
     let filter = null;
     
-    let multipleSelects = document.querySelectorAll('[data-multiple-select]');
-    if(multipleSelects.length) {
-        let btnClearSelectedFilters = document.querySelector('[data-clear-selected-filters]');
-        multipleSelects.forEach((select, index) => {
-            let selectedFilterList = document.querySelector('.hero-filter__selected-filters-list');
-
-            let multipleSelect = new MultipleSelect(select, index, {
-                duplicateSelectedButtons: selectedFilterList,
-                clearAllBtn: btnClearSelectedFilters,
-                on: {
-                    afterChange: (input) => {
-                        if(input.name?.trim()) {
-                            if(filter) {
-                                filter.setInputStateByName(input.name?.trim(), input.value, input.checked);
-                            }
-                        }
-                    }
-                }
-            })
-
-            multipleSelectsObjects.push(multipleSelect);
-        })
-    }
-
     let filterContainer = document.querySelector('[data-filter]');
     if(filterContainer) {
         let btnClearSelectedFilters = document.querySelector('[data-clear-selected-filters]');
@@ -1526,18 +1501,6 @@ class Filter {
         filter = new Filter(filterContainer, 4, {
             duplicateSelectedButtons: selectedFilterList,
             clearAllBtn: btnClearSelectedFilters,
-            on: {
-                afterChange: (input) => {
-                    console.log(input, 'test');
-                    if(input.name?.trim()) {
-                        if(multipleSelectsObjects.length) {
-                            multipleSelectsObjects.forEach(multipleSelect => {
-                                multipleSelect.setInputStateByName(input.name?.trim(), input.value, input.checked);
-                            })
-                        }
-                    }
-                }
-            }
         });
     }
 }

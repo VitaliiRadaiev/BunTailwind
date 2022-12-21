@@ -7,24 +7,58 @@
             <h1 class="hero-filter__title title-2 text-center mb-[2rem]">
                 Vind snel de perfecte baan bij Albert Heijn
             </h1>
-            <div class="hero-filter__list grid grid-cols-1 gap-[2rem] lg:gap-[4rem] lg:grid-cols-3">
-                @@include('../multiple-select/_multiple-select.html', {
-                    "placeholder": "Waar wil je werken?"
-                })
-                @@include('../multiple-select/_multiple-select.html', {
-                    "placeholder": "In welk filiaal wil je werken?"
-                })
-                @@include('../multiple-select/_multiple-select.html', {
-                    "placeholder": "Wat wil je doen?"
-                })
+            <div class="hero-filter__list flex flex-wrap justify-center gap-x-[0.7rem] gap-y-[1.1rem] w-full" data-filter>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox" checked>
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        Marketing
+                    </div>
+                </label>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox">
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        HR
+                    </div>
+                </label>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox">
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        Sales
+                    </div>
+                </label>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox">
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        Projectontwikkelaar
+                    </div>
+                </label>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox">
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        Vastgoed
+                    </div>
+                </label>
+                <label class="promo-header__filter-item block cursor-pointer relative select-none">
+                    <input class="absolute opacity-0 z-0" type="checkbox">
+                    <div
+                        class="promo-header__filter-item-text block cursor-pointer relative-text inline-flex text-center justify-center items-center min-h-[4.1rem] px-[1.6rem] py-[1rem] font-medium text-[1.2rem] leading-[1.5rem] text-white border-white border-[0.2rem] rounded-[200px] transition-all">
+                        Supermarkt
+                    </div>
+                </label>
             </div>
         </div>
     </div>
-    <div class="hero-filter__footer container flex flex-wrap items-center justify-between gap-[2rem] md:flex-nowrap">
+    <div class="hero-filter__footer container-third flex flex-wrap items-center justify-between gap-[2rem] md:flex-nowrap">
         <div class="hero-filter__selected-filters flex flex-wrap items-center gap-[1rem] md:flex-nowrap">
             <div class="hero-filter__selected-filters-label font-bold text-textColorDark">Geselecteerde filters</div>
             <div class="hero-filter__selected-filters-list flex flex-wrap gap-[0.5rem] min-h-[3rem]"></div>
-            <button class="hero-filter__remove-all-filters text-[#77AE29] transition hover:text-red-600" data-clear-selected-filters>Alle filters verwijderen</button>
+            <button class="hero-filter__remove-all-filters text-[#77AE29] transition hover:text-red-600"
+                data-clear-selected-filters>Alle filters verwijderen</button>
         </div>
         <div class="hero-filter__found-result text-textColorDark opacity-40">23 vacatures gevonden</div>
     </div>

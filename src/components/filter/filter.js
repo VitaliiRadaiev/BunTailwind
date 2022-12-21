@@ -71,10 +71,10 @@ class Filter {
                 input.setAttribute('data-filter-id', this.id);
                 input.setAttribute('data-filter-input-id', index);
 
-                let text = input.parentElement.querySelector('.checkbox-radio__text').innerText;
+                let text = input.parentElement.querySelector('.promo-header__filter-item-text').innerText;
 
                 if (input.checked) {
-                    this.addSelectedButtons(this.id, index, text);
+                    this.addSelectedButtons(this.id, index, text, input);
                 }
 
                 input.addEventListener('change', (e) => {

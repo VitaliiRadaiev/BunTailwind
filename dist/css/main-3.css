@@ -615,14 +615,6 @@ video {
   left: 0px;
 }
 
-.left-\[50\%\] {
-  left: 50%;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
 .top-\[10rem\] {
   top: 10rem;
 }
@@ -631,8 +623,16 @@ video {
   bottom: 0px;
 }
 
+.left-\[50\%\] {
+  left: 50%;
+}
+
 .top-\[1\.4rem\] {
   top: 1.4rem;
+}
+
+.top-\[50\%\] {
+  top: 50%;
 }
 
 .right-\[2\.4rem\] {
@@ -1149,6 +1149,13 @@ video {
       flex-basis: auto;
 }
 
+.translate-y-\[50\%\] {
+  --tw-translate-y: 50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1158,13 +1165,6 @@ video {
 
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[50\%\] {
-  --tw-translate-y: 50%;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1687,10 +1687,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-\[8rem\] {
-  font-size: 8rem;
 }
 
 .text-\[1\.7rem\] {
@@ -3997,6 +3993,15 @@ body::-webkit-scrollbar-track {
           box-shadow: inset 0px 0px 0px 0px #fff;
 }
 
+body.admin-bar .header,
+body.admin-bar .mobile-menu {
+  top: 32px;
+}
+
+body #wpadminbar {
+  position: fixed !important;
+}
+
 h1,
 .title-1 {
   font-weight: 400;
@@ -5228,9 +5233,30 @@ input.input--text-dark::placeholder {
   color: #1E1D1B;
 }
 
+.cta {
+  overflow: hidden;
+}
+
+.cta__body {
+  max-width: calc(128rem + 40px);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta__body-col:nth-child(1) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .cta__title {
   font-size: 3rem;
   line-height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 39rem;
 }
 
 .cta__form {
@@ -5267,38 +5293,39 @@ input.input--text-dark::placeholder {
   border-radius: 0.5rem;
   padding: 1rem 2.5rem;
   font-weight: bold;
-  color: #00A1E2;
+  color: #1E1D1B;
   height: 6.2rem;
+  font-weight: 500;
 }
 
 .cta__form .gform_body .gfield input[type=text]::-moz-placeholder,
 .cta__form .gform_body .gfield input[type=email]::-moz-placeholder,
 .cta__form .gform_body .gfield input[type=tel]::-moz-placeholder,
 .cta__form .gform_body .gfield input[type=password]::-moz-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]::-webkit-input-placeholder, .cta__form .gform_body .gfield input[type=email]::-webkit-input-placeholder, .cta__form .gform_body .gfield input[type=tel]::-webkit-input-placeholder, .cta__form .gform_body .gfield input[type=password]::-webkit-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]::-moz-placeholder, .cta__form .gform_body .gfield input[type=email]::-moz-placeholder, .cta__form .gform_body .gfield input[type=tel]::-moz-placeholder, .cta__form .gform_body .gfield input[type=password]::-moz-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]:-ms-input-placeholder, .cta__form .gform_body .gfield input[type=email]:-ms-input-placeholder, .cta__form .gform_body .gfield input[type=tel]:-ms-input-placeholder, .cta__form .gform_body .gfield input[type=password]:-ms-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]::-ms-input-placeholder, .cta__form .gform_body .gfield input[type=email]::-ms-input-placeholder, .cta__form .gform_body .gfield input[type=tel]::-ms-input-placeholder, .cta__form .gform_body .gfield input[type=password]::-ms-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]::placeholder,
 .cta__form .gform_body .gfield input[type=email]::placeholder,
 .cta__form .gform_body .gfield input[type=tel]::placeholder,
 .cta__form .gform_body .gfield input[type=password]::placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield input[type=text]:focus-visible,
@@ -5322,29 +5349,30 @@ input.input--text-dark::placeholder {
   border-radius: 0.5rem;
   padding: 2rem 2.5rem;
   font-weight: bold;
-  color: #00A1E2;
+  color: #1E1D1B;
   height: 14.3rem !important;
   resize: none;
+  font-weight: 500;
 }
 
 .cta__form .gform_body .gfield textarea::-moz-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield textarea::-webkit-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield textarea:-ms-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield textarea::-ms-input-placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield textarea::placeholder {
-  color: rgba(0, 161, 226, 0.47);
+  color: #808695;
 }
 
 .cta__form .gform_body .gfield textarea:focus-visible {
@@ -5373,8 +5401,8 @@ input.input--text-dark::placeholder {
   display: block !important;
   margin-bottom: 0.4rem !important;
   font-weight: 400 !important;
-  font-size: 1.7rem !important;
-  line-height: 2.1rem !important;
+  font-size: 1.6rem !important;
+  line-height: 2rem !important;
 }
 
 .cta__form .gform_body .gfield_label .gfield_required {
@@ -5406,7 +5434,8 @@ input.input--text-dark::placeholder {
   font-size: 1.7rem;
   line-height: 2.1rem;
   color: #fff;
-  background-color: #00A1E2;
+  background-color: transparent;
+  border: 0.2rem solid;
   border-radius: 0.4rem;
   text-align: center;
   -webkit-box-pack: center;
@@ -5415,10 +5444,10 @@ input.input--text-dark::placeholder {
   -webkit-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cta__form .gform_footer .gform_button:hover {
-  opacity: 0.8;
+  margin-bottom: 0;
+  opacity: 1 !important;
+  border-color: #fff;
+  cursor: pointer;
 }
 
 .vacancy__options-btn input:checked ~ .vacancy__options-btn-text {
@@ -5719,14 +5748,6 @@ input.input--text-dark::placeholder {
   opacity: 0.5;
 }
 
-.group:hover .group-hover\:scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (min-width: 100%) {
   .container {
     max-width: 100%;
@@ -5759,8 +5780,15 @@ input.input--text-dark::placeholder {
     font-size: 6rem;
   }
 
+  .cta__body-col:nth-child(1) {
+    padding-left: 0;
+  }
+
   .cta__title {
     font-size: 3.5rem;
+    max-width: 45rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .cta__form .gform_footer {
@@ -6088,6 +6116,11 @@ input.input--text-dark::placeholder {
     background-color: rgba(255, 255, 255, 0.2);
   }
 
+  .cta__form .gform_footer .gform_button:hover {
+    background-color: #fff;
+    color: #1E1D1B;
+  }
+
   .lg\:static {
     position: static;
   }
@@ -6132,11 +6165,6 @@ input.input--text-dark::placeholder {
         flex-basis: 20%;
   }
 
-  .lg\:basis-\[28rem\] {
-    -ms-flex-preferred-size: 28rem;
-        flex-basis: 28rem;
-  }
-
   .lg\:grid-cols-4 {
     -ms-grid-columns: (minmax(0, 1fr))[4];
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -6177,10 +6205,6 @@ input.input--text-dark::placeholder {
 
   .lg\:gap-\[10\.4rem\] {
     gap: 10.4rem;
-  }
-
-  .lg\:gap-\[4rem\] {
-    gap: 4rem;
   }
 
   .lg\:rounded-\[0\.5rem\] {
@@ -6241,18 +6265,6 @@ input.input--text-dark::placeholder {
   }
 }
 
-@media (min-width: 1921px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 2561px) {
-  html {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 1267.98px) {
   .footer__row-1 {
     -ms-grid-columns: 16.4rem 1fr;
@@ -6292,6 +6304,13 @@ input.input--text-dark::placeholder {
 
   .text-content iframe {
     height: 500px;
+  }
+}
+
+@media (max-width: 782px) {
+  body.admin-bar .header,
+  body.admin-bar .mobile-menu {
+    top: 46px;
   }
 }
 

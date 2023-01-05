@@ -59,7 +59,7 @@ function devHTML(){
 
 function devStyles(){
   const tailwindcss = require('tailwindcss'); 
-  return src(`${options.paths.src.css}/main.scss`)
+  return src(`${options.paths.src.css}/main-3.scss`)
     .pipe(sass({
       outputStyle: "expanded"
     }).on('error', sass.logError))
@@ -78,7 +78,7 @@ function devStyles(){
 
 function devScripts(){
   return src([
-    `${options.paths.src.js}/main.js`,
+    `${options.paths.src.js}/main-3.js`,
     `${options.paths.src.js}/vendors.js`,
     `!${options.paths.src.js}/**/external/*`
   ])

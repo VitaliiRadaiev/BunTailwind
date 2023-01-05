@@ -14,13 +14,13 @@ html {
 		font-size: 10px;
 	}
 
-	@media (min-width: 1921px) {
-		font-size: 12px;
-	}
+	// @media (min-width: 1921px) {
+	// 	font-size: 12px;
+	// }
 
-	@media (min-width: 2561px) {
-		font-size: 14px;
-	}
+	// @media (min-width: 2561px) {
+	// 	font-size: 14px;
+	// }
 }
 
 body {
@@ -55,6 +55,19 @@ body {
 		background: #fff;
 		border-radius: 10px;
 		box-shadow: inset 0px 0px 0px 0px #fff;
+	}
+
+	&.admin-bar {
+		& .header, & .mobile-menu {
+			top: 32px;
+			@media (max-width: 782px) {
+				top: 46px;
+			}
+		}
+	}
+
+	& #wpadminbar {
+		position: fixed !important;
 	}
 }
 
